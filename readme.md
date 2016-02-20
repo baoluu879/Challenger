@@ -13,7 +13,7 @@ In this project, I use sqlite for database.
 First,
   php artisan migrate   -- to migrate the tables into sqlite. There are 4 tables in this project that i created. "Address", "Lisintg", "Photo", and "MLS"
   If, to check that you have sqlite installed, type "sqlite3". 
-  If your laptop dont have sqlite installed. type "homebrew install sqli" to install. 
+  If your laptop dont have sqlite installed. type "homebrew install sqli" to install. </n>
 Second, 
   To import the data into database (sqlite). I already have 4 import files for each individual tables. I use the feature which already have in laravel package Database Seeder. 
   Type  "composer dump-autoload" 
@@ -23,6 +23,7 @@ Third, to make you that you have the right version. Do "composer update". It wil
 Fourth, to check the result. 
   Type, php artisan serve 
   Then, access by this link. 
+  
       http://localhost:8000/all  -- show all listing.
       
       http://localhost:8000/price?priceSort=1  -- 1-DESC
