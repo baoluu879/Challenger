@@ -8,14 +8,14 @@
 
 SNTMedia Challenger. 
  
-Using Laravel Framework to build this project. 
-In this project, I use sqlite for database. 
-First,
-  php artisan migrate   -- to migrate the tables into sqlite. There are 4 tables in this project that i created. "Address", "Lisintg", "Photo", and "MLS"
+<p>Using Laravel Framework to build this project. 
+In this project, I use sqlite for database. </p>
+<p>First,</p>
+  <p>php artisan migrate   -- to migrate the tables into sqlite. There are 4 tables in this project that i created. "Address", "Lisintg", "Photo", and "MLS"
   If, to check that you have sqlite installed, type "sqlite3". 
-  If your laptop dont have sqlite installed. type "homebrew install sqli" to install. </n>
-Second, 
-  To import the data into database (sqlite). I already have 4 import files for each individual tables. I use the feature which already have in laravel package Database Seeder. 
+  If your laptop dont have sqlite installed. type "homebrew install sqli" to install. </p>
+<p>Second,</p> 
+  <p>To import the data into database (sqlite). I already have 4 import files for each individual tables. I use the feature which already have in laravel package Database Seeder. </p>
   Type  "composer dump-autoload" 
   then, "php artisan db:seed" 
   After this you will have all the database environment setting up for you. 
