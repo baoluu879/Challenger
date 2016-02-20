@@ -26,5 +26,6 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
+        $schedule->command('db:seed')->dailyAt('2:00');
     }
 }

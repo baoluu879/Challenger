@@ -14,25 +14,19 @@ class challengerController extends Controller
 {
     public function showAllListing(){
         $temp = new lib();
-        //$result = [];
         $result = $temp->getAddress();
-        //var_dump($result);
-
-            foreach ($result as $a =>$b) {
-                $address = $b->AddressID;
-                $b->listing = ($temp->getListing($address));
-                $b->photo = $temp->getPhoto($address);
-                $b->description = $temp->getDescription($address);
-                $b->mls = $temp->getMLS($address);
-            }
-
-
+        foreach ($result as $a =>$b) {
+            $address = $b->AddressID;
+            $b->listing = ($temp->getListing($address));
+            $b->photo = $temp->getPhoto($address);
+            $b->description = $temp->getDescription($address);
+            $b->mls = $temp->getMLS($address);
+        }
         return $result;
     }
 
     public function showByListPrice(){
         $flag = Input::get('priceSort'); // 1 = DESC , 2 = ASC
-
         $temp = new lib();
         $result = $temp->getAddress();
         foreach($result as &$a){
