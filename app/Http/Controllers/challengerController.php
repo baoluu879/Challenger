@@ -68,54 +68,33 @@ class challengerController extends Controller
     }
 
     public function updatingListing(){
-        $ID = Input::get('ID');
-        switch($ID){
-            case 1:
-                DB::table('Listing')
-                    ->where('ListingID', "$ID")->where('ListingStatus', 'Active')->update(['PropertyType' => 'Commercial','Bathrooms' => 10]);
-                echo "done with updating listing {$ID} \n";
-                return (DB::table('Listing')
-                    ->where('ListingID', "$ID")->where('ListingStatus', 'Active')
-                    ->get());
-                break;
-            case 2:
-                DB::table('Listing')
-                    ->where('ListingID', "$ID")->where('ListingStatus', 'Active')->update(['Bedrooms' => 5,'Bathrooms' => 3]);
-                echo "done with updating listing {$ID} \n";
-                return (DB::table('Listing')
-                    ->where('ListingID', "$ID")->where('ListingStatus', 'Active')
-                    ->get());
-                break;
-            case 3:
-                DB::table('Listing')
-                    ->where('ListingID', "$ID")->where('ListingStatus', 'Active')->update(['ListPrice' => '300000']);
-                echo "done with updating listing {$ID} \n";
-                return (DB::table('Listing')
-                    ->where('ListingID', "$ID")->where('ListingStatus', 'Active')
-                    ->get());
-                break;
-            case 4:
-                DB::table('Listing')
-                    ->where('ListingID', "$ID")->where('ListingStatus', 'Active')->update(['PropertyType' => 'Residential']);
-                echo "done with updating listing {$ID} \n";
-                return (DB::table('Listing')
-                    ->where('ListingID', "$ID")->where('ListingStatus', 'Active')
-                    ->get());
-                break;
-            case 5:
-                DB::table('Listing')
-                    ->where('ListingID', "$ID")->where('ListingStatus', 'Active')->update(['PropertyType' => 'Commercial','Bedrooms' => 4]);
-                echo "done with updating listing {$ID} \n";
-                return (DB::table('Listing')
-                    ->where('ListingID', "$ID")->where('ListingStatus', 'Active')
-                    ->get());
-                break;
-            default:
 
-                return (DB::table('Listing')
-                    ->where('ListingStatus', 'Active')
-                    ->get());
-                break;
-        }
+        DB::table('Listing')
+            ->where('ListingID', "1")->where('ListingStatus', 'Active')->update(['PropertyType' => 'Commercial','Bathrooms' => 10]);
+        echo "done with updating listing 1\n";
+
+
+        DB::table('Listing')
+            ->where('ListingID', "2")->where('ListingStatus', 'Active')->update(['Bedrooms' => 5,'Bathrooms' => 3]);
+        echo "done with updating listing 2\n";
+
+
+        DB::table('Listing')
+            ->where('ListingID', "3")->where('ListingStatus', 'Active')->update(['ListPrice' => '300000']);
+        echo "done with updating listing34 \n";
+
+
+        DB::table('Listing')
+            ->where('ListingID', "4")->where('ListingStatus', 'Active')->update(['PropertyType' => 'Residential']);
+        echo "done with updating listing 4 \n";
+        ;
+
+        DB::table('Listing')
+            ->where('ListingID', "5")->where('ListingStatus', 'Active')->update(['PropertyType' => 'Commercial','Bedrooms' => 4]);
+        echo "done with updating listing 5 \n";
+
+        return (DB::table('Listing')
+            ->where('ListingStatus', 'Active')
+            ->get());
     }
 }

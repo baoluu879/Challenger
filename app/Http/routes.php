@@ -26,11 +26,11 @@ Route::get('/price','challengerController@showByListPrice');
 
 Route::get('/updateListing','challengerController@updatingListing');
 //http://localhost:8000/updateListing -- To show all listing
-//http://localhost:8000/updateListing?ID=1 -- to update Listing No.1 with 'PropertyType' => 'Commercial','Bathrooms' => 10
-//http://localhost:8000/updateListing?ID=2 -- to update Listing No.2 with Bedrooms' => 5,'Bathrooms' => 3
-//http://localhost:8000/updateListing?ID=3 -- to update Listing No.3 with 'ListPrice' => '300000'
-//http://localhost:8000/updateListing?ID=4 -- to update Listing No.4 with 'PropertyType' => 'Residential'
-//http://localhost:8000/updateListing?ID=5 -- to update Listing No.5 with 'PropertyType' => 'Commercial','Bedrooms' => 4
+//update Listing No.1 with 'PropertyType' => 'Commercial','Bathrooms' => 10
+//update Listing No.2 with Bedrooms' => 5,'Bathrooms' => 3
+//update Listing No.3 with 'ListPrice' => '300000'
+//update Listing No.4 with 'PropertyType' => 'Residential'
+//update Listing No.5 with 'PropertyType' => 'Commercial','Bedrooms' => 4
 
 Route::get('/photo','challengerController@showPhoto'); // http://localhost:8000/photo -- show all Photo
 
