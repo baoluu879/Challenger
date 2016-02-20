@@ -19,8 +19,10 @@ In this project, I use sqlite for database. </p>
   Type  "composer dump-autoload" </br>
   then, "php artisan db:seed" </br>
   After this you will have all the database environment setting up for you. 
-Third, to make you that you have the right version. Do "composer update". It will get the latest version of composer for you to run this project.</br>
-Fourth, to check the result. </br>
+<p>Third, </p>
+to make you that you have the right version. Do "composer update". It will get the latest version of composer for you to run this project.</br>
+<p>Fourth, </p>
+to check the result. </br>
   Type, php artisan serve </br>
   Then, access by this link. 
   
@@ -38,7 +40,8 @@ Fourth, to check the result. </br>
       
       http://localhost:8000/photo -- show all Photo
       
-Fifth, to check the schedule that you will every 2AM in the morning, </br>
+<p>Fifth, </p> 
+to check the schedule that you will every 2AM in the morning, </br>
   I added, </br>
     "* * * * * php /Users/bao/Documents/Challenger/artisan schedule:run 1>> /dev/null 2>&1" in crontab file. </br>
     so every minites it will run "php artisan schedule:run" in my localmachine to run all the command that i scheduled. </br>
