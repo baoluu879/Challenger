@@ -28,8 +28,8 @@ to check the result. </br>
   
       http://localhost:8000/all  -- show all listing.
       
-      http://localhost:8000/price?priceSort=1  -- 1-DESC
-      http://localhost:8000/price?priceSort=2  -- 2-ASC
+      http://localhost:8000/price?priceSort=1  -- 1-DESC Descending by ListPrice
+      http://localhost:8000/price?priceSort=2  -- 2-ASC Ascending  by ListPrice
       
       http://localhost:8000/updateListing -- To show all listing updates. 
                 --update Listing No.1 with 'PropertyType' => 'Commercial','Bathrooms' => 10
