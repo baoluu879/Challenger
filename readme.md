@@ -16,7 +16,7 @@ In this project, I use sqlite for database. </p>
   If your laptop dont have sqlite installed. type "homebrew install sqli" to install. </p>
 <p>Second,</p> 
   <p>To import the data into database (sqlite). I already have 4 import files for each individual tables. I use the feature which already have in laravel package Database Seeder. </p>
-  Type  "composer dump-autoload" 
+  Type  "composer dump-autoload" </br>
   then, "php artisan db:seed" 
   After this you will have all the database environment setting up for you. 
 Third, to make you that you have the right version. Do "composer update". It will get the latest version of composer for you to run this project.
