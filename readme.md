@@ -17,11 +17,11 @@ In this project, I use sqlite for database. </p>
 <p>Second,</p> 
   <p>To import the data into database (sqlite). I already have 4 import files for each individual tables. I use the feature which already have in laravel package Database Seeder. </p>
   Type  "composer dump-autoload" </br>
-  then, "php artisan db:seed" 
+  then, "php artisan db:seed" </br>
   After this you will have all the database environment setting up for you. 
-Third, to make you that you have the right version. Do "composer update". It will get the latest version of composer for you to run this project.
-Fourth, to check the result. 
-  Type, php artisan serve 
+Third, to make you that you have the right version. Do "composer update". It will get the latest version of composer for you to run this project.</br>
+Fourth, to check the result. </br>
+  Type, php artisan serve </br>
   Then, access by this link. 
   
       http://localhost:8000/all  -- show all listing.
@@ -38,13 +38,13 @@ Fourth, to check the result.
       
       http://localhost:8000/photo -- show all Photo
       
-Fifth, to check the schedule that you will every 2AM in the morning, 
-  I added, 
-    "* * * * * php /Users/bao/Documents/Challenger/artisan schedule:run 1>> /dev/null 2>&1" in crontab file. 
-    so every minites it will run "php artisan schedule:run" in my localmachine to run all the command that i scheduled. 
-  Then, added
-    "$schedule->command('db:seed')->dailyAt('2:00');" --in app/Console,Kernal.php
-  This is new things in laravel 5.2 It will help us schedule our job. So with that commmand, in every day at 2AM. It will run the command "php artisan db:seed" for me to seed all the data into sqlite database that i have. 
+Fifth, to check the schedule that you will every 2AM in the morning, </br>
+  I added, </br>
+    "* * * * * php /Users/bao/Documents/Challenger/artisan schedule:run 1>> /dev/null 2>&1" in crontab file. </br>
+    so every minites it will run "php artisan schedule:run" in my localmachine to run all the command that i scheduled. </br>
+  Then, added </br>
+    "$schedule->command('db:seed')->dailyAt('2:00');" --in app/Console,Kernal.php </br>
+  This is new things in laravel 5.2 It will help us schedule our job. So with that commmand, in every day at 2AM. It will run the command "php artisan db:seed" for me to seed all the data into sqlite database that i have.  </br>
       
 
 ## Official Documentation
