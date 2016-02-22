@@ -54,13 +54,7 @@ to check the schedule that you will every 2AM in the morning, </br>
 
 Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+## Contact
 
 You can send me an email at bao.luu@sntmedia.com if you have any question.
 
