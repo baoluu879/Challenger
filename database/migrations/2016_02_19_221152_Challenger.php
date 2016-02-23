@@ -70,6 +70,11 @@ class Challenger extends Migration
             $table->string('MlsName')->default('');
             $table->string('MlsNumber')->default('');
         });
+
+//        Schema::table('Address',function(Blueprint $table){
+//            $table->string('newcolumn')->nullable();
+//        });
+
     }
 
     /**
@@ -82,5 +87,10 @@ class Challenger extends Migration
         Schema::drop('Address');
         Schema::drop('Listing');
         Schema::drop('Photo');
+        Schema::drop('Description');
+        Schema::drop('MLS');
+//        Schema::table('Address',function(Blueprint $table){
+//           $table->dropColumn('newcolumn');
+//        });
     }
 }

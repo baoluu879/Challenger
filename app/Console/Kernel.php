@@ -26,6 +26,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
-        $schedule->command('db:seed')->dailyAt('2:00');
+        $schedule->command('db:seed')->hourly()->sendOutputTo('/Users/bao/Documents/Challenger/challenger.txt')
+            ->emailOutputTo('foo@example.com');
     }
 }
